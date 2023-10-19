@@ -6,4 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Reports\SampleReport.trdp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Reports\SampleReport.trdp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telerik.Reporting.OpenXmlRendering" Version="17.2.23.1010" />
+    <PackageReference Include="Telerik.Reporting.Services.AspNetCore" Version="17.2.23.1010" />
+  </ItemGroup>
+
 </Project>
